@@ -19,7 +19,7 @@ List ordering follows [TIOBE Index](https://www.tiobe.com/tiobe-index/).
 | Ruby |
 | Go |
 | Swift |
-| MATLAB |
+| [MATLAB](#matlab) | intrinsic | [`randi(imax)`](https://www.mathworks.com/help/matlab/ref/randi.html) | [`rand`](https://www.mathworks.com/help/matlab/ref/rand.html) | 
 | Fortran |
 | R |
 | Perl |
@@ -45,5 +45,7 @@ List ordering follows [TIOBE Index](https://www.tiobe.com/tiobe-index/).
 ## JavaScript
 
 ## PHP
+
+## MATLAB
 
 ## Scala
