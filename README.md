@@ -8,13 +8,13 @@ List ordering follows [TIOBE Index](https://www.tiobe.com/tiobe-index/).
 |----------|--------|--------------------|------------------|
 | [C](#c) | [`stdlib.h`](https://pubs.opengroup.org/onlinepubs/9699919799/basedefs/stdlib.h.html) | [`rand() % 10 + 1`](https://www.gnu.org/software/libc/manual/html_node/ISO-Random.html) | `rand() / (float)RAND_MAX * 100` |
 | [Python](#python) | [`random`](https://docs.python.org/3/library/random.html) | [`random.randint(1, 10)`](https://docs.python.org/3/library/random.html#random.randint) | [`random.random() * 100`](https://docs.python.org/3/library/random.html#random.random) |
-| [Java](#Java) | [`java.util.Random`](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Random.html) | [`new Random().nextInt(10) + 1`](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Random.html#nextInt()) | [`new Random().nextFloat() * 100`](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Random.html#nextFloat()) |
-| [C++](#C++) |
+| [Java](#java) | [`java.util.Random`](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Random.html) | [`new Random().nextInt(10) + 1`](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Random.html#nextInt()) | [`new Random().nextFloat() * 100`](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Random.html#nextFloat()) |
+| [C++](#C++) | `<random>` | (mt19937...) | |
 | C# |
 | Visual Basic |
-| JavaScript |
+| [JavaScript](#javascript) | [`Math`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math) | [`Math.floor(Math.random() * 10) + 1`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/random) | `Math.random() * 100` |
 | Assembly |
-| PHP |
+| [PHP](#php) | [Math](https://www.php.net/manual/en/book.math.php) | [`mt_rand(1, 10)`](https://www.php.net/manual/function.rand.php) | [`(float) mt_rand() / (float) (mt_getrandmax() + 1) * 100`](https://www.php.net/manual/en/function.mt-getrandmax.php) |
 | SQL |
 | Ruby |
 | Go |
@@ -43,5 +43,7 @@ List ordering follows [TIOBE Index](https://www.tiobe.com/tiobe-index/).
 ## Visual Basic
 
 ## JavaScript
+
+## PHP
 
 ## Scala
