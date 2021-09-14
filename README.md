@@ -25,7 +25,7 @@ List ordering follows [TIOBE Index](https://www.tiobe.com/tiobe-index/).
 | Perl |
 | Delphi |
 | Rust |
-| [Scala](#scala) | [`scala.util.Random`](https://www.scala-lang.org/api/3.0.2/scala/util/Random.html) | `Random.nextInt(10) + 1` | `Random.between(1f, 100f)` |
+| [Scala](#scala) | [`scala.util.Random`](https://www.scala-lang.org/api/3.0.2/scala/util/Random.html) | [`Random.nextInt(10) + 1`](https://www.scala-lang.org/api/3.0.2/scala/util/Random.html#nextInt-fffffbe0) | [`Random.between(1f, 100f)`](https://www.scala-lang.org/api/3.0.2/scala/util/Random.html#between-44b) |
 
 
 ## C
