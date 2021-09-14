@@ -12,7 +12,7 @@ List ordering follows [TIOBE Index](https://www.tiobe.com/tiobe-index/).
 | [C++](#C++) | `<random>` | (mt19937...) | |
 | C# |
 | Visual Basic |
-| [JavaScript](#javascript) | [`Math`](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Math) | [`Math.floor(Math.random() * 10) + 1`](https://developer.mozilla.org/ko/docs/Web/JavaScript/Reference/Global_Objects/Math/random) | `Math.random() * 100` |
+| [JavaScript](#javascript) | [`Math`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math) | [`Math.floor(Math.random() * 10) + 1`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/random) | `Math.random() * 100` |
 | Assembly |
 | PHP |
 | SQL |
