@@ -1,5 +1,5 @@
 # pseudo-random-yellowbook
-A yellow-book of pseudo random generation of modern programming languages.
+A yellow-book of pseudo random number generation of modern programming languages.
 
 List ordering follows [TIOBE Index](https://www.tiobe.com/tiobe-index/).
 
