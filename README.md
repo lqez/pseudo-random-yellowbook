@@ -20,7 +20,7 @@ List ordering follows [TIOBE Index](https://www.tiobe.com/tiobe-index/).
 | Go |
 | Swift |
 | [MATLAB](#matlab) | intrinsic | [`randi(imax)`](https://www.mathworks.com/help/matlab/ref/randi.html) | [`rand`](https://www.mathworks.com/help/matlab/ref/rand.html) | 
-| Fortran |
+| [Fortran](#fortran) | intrinsic | Convert from float random number | [`CALL RANDOM_NUMBER(r)`](https://gcc.gnu.org/onlinedocs/gfortran/RANDOM_005fNUMBER.html#RANDOM_005fNUMBER) | 
 | R |
 | Perl |
 | Delphi |
@@ -47,5 +47,14 @@ List ordering follows [TIOBE Index](https://www.tiobe.com/tiobe-index/).
 ## PHP
 
 ## MATLAB
+
+## Fortran
+* Declare output variable first and pass it to `RANDOM_NUMBER`.
+  ```fortran
+    program test_random_number
+        REAL :: r(5,5)
+        CALL RANDOM_NUMBER(r)
+    end program
+  ```
 
 ## Scala
