@@ -14,7 +14,7 @@ List ordering follows [TIOBE Index](https://www.tiobe.com/tiobe-index/).
 | Visual Basic |
 | [JavaScript](#javascript) | [`Math`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math) | [`Math.floor(Math.random() * 10) + 1`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/random) | `Math.random() * 100` |
 | Assembly |
-| [PHP](#php) | [Math](https://www.php.net/manual/en/book.math.php) | [`mt_rand(1, 10)`](https://www.php.net/manual/function.rand.php) | [`(float) mt_rand() / (float) (mt_getrandmax() + 1) * 100`](https://www.php.net/manual/en/function.mt-getrandmax.php) |
+| [PHP](#php) | [Math](https://www.php.net/manual/en/book.math.php) (core) | [`mt_rand(1, 10)`](https://www.php.net/manual/function.rand.php) | [`mt_rand() / (float)(mt_getrandmax() + 1) * 100`](https://www.php.net/manual/en/function.mt-getrandmax.php) |
 | SQL |
 | Ruby |
 | Go |
