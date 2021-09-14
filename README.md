@@ -19,12 +19,13 @@ List ordering follows [TIOBE Index](https://www.tiobe.com/tiobe-index/).
 | Ruby |
 | Go |
 | Swift |
-| [MATLAB](#matlab) | intrinsic | [`randi(imax)`](https://www.mathworks.com/help/matlab/ref/randi.html) | [`rand`](https://www.mathworks.com/help/matlab/ref/rand.html) | 
-| [Fortran](#fortran) | intrinsic | Convert from float random number | [`CALL RANDOM_NUMBER(r)`](https://gcc.gnu.org/onlinedocs/gfortran/RANDOM_005fNUMBER.html#RANDOM_005fNUMBER) | 
+| [MATLAB](#matlab) | intrinsic | [`randi(imax)`](https://www.mathworks.com/help/matlab/ref/randi.html) | [`rand`](https://www.mathworks.com/help/matlab/ref/rand.html) |
+| [Fortran](#fortran) | intrinsic | Convert from float random number | [`CALL RANDOM_NUMBER(r)`](https://gcc.gnu.org/onlinedocs/gfortran/RANDOM_005fNUMBER.html#RANDOM_005fNUMBER) |
 | R |
 | Perl |
 | Delphi |
 | Rust |
+| [Julia](#julia) | `Random` | [`abs(rand(Int64)) % 10 + 1`](https://docs.julialang.org/en/v1/stdlib/Random/#Base.rand) | [`abs(rand(Float64)) * 100`](https://docs.julialang.org/en/v1/stdlib/Random/#Base.rand)
 | [Scala](#scala) | [`scala.util.Random`](https://www.scala-lang.org/api/3.0.2/scala/util/Random.html) | [`Random.nextInt(10) + 1`](https://www.scala-lang.org/api/3.0.2/scala/util/Random.html#nextInt-fffffbe0) | [`Random.between(1f, 100f)`](https://www.scala-lang.org/api/3.0.2/scala/util/Random.html#between-44b) |
 
 
