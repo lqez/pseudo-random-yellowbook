@@ -17,7 +17,7 @@ List ordering follows [TIOBE Index](https://www.tiobe.com/tiobe-index/).
 | [PHP](#php) | [Math](https://www.php.net/manual/en/book.math.php) (core) | [`mt_rand(1, 10)`](https://www.php.net/manual/function.rand.php) | [`mt_rand() / (float)(mt_getrandmax() + 1) * 100`](https://www.php.net/manual/en/function.mt-getrandmax.php) |
 | SQL |
 | Ruby |
-| Go |
+| [Go](#Go) | [`math/rand`](https://pkg.go.dev/math/rand) | [`rand.Intn(10)`](https://pkg.go.dev/math/rand#Intn) | [`rand.Float64() * 100`](https://pkg.go.dev/math/rand#Float64)
 | Swift |
 | MATLAB |
 | Fortran |
@@ -43,3 +43,5 @@ List ordering follows [TIOBE Index](https://www.tiobe.com/tiobe-index/).
 ## JavaScript
 
 ## PHP
+
+## Go
