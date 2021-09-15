@@ -15,7 +15,7 @@ List ordering follows [TIOBE Index](https://www.tiobe.com/tiobe-index/).
 | [JavaScript](#javascript) | [`Math`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math) | [`Math.floor(Math.random() * 10) + 1`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/random) | `Math.random() * 100` |
 | Assembly |
 | [PHP](#php) | [Math](https://www.php.net/manual/en/book.math.php) (core) | [`mt_rand(1, 10)`](https://www.php.net/manual/function.rand.php) | [`mt_rand() / (float)(mt_getrandmax() + 1) * 100`](https://www.php.net/manual/en/function.mt-getrandmax.php) |
-| SQL |
+| [SQL](#sql) | - | `SELECT TRUNC(RANDOM() * 10) + 1` | `SELECT RANDOM() * 100` |
 | [Ruby](#ruby) | [Random](https://ruby-doc.org/core-3.0.2/Random.html) | [`rand(10) + 1`](https://ruby-doc.org/core-3.0.2/Random.html#method-i-rand) | [`rand * 100`](https://ruby-doc.org/core-3.0.2/Random.html#method-i-rand) |
 | [Go](#Go) | [`math/rand`](https://pkg.go.dev/math/rand) | [`rand.Intn(10) + 1`](https://pkg.go.dev/math/rand#Intn) | [`rand.Float64() * 100`](https://pkg.go.dev/math/rand#Float64) |
 | Swift |
@@ -46,6 +46,12 @@ List ordering follows [TIOBE Index](https://www.tiobe.com/tiobe-index/).
 ## JavaScript
 
 ## PHP
+
+## SQL
+
+Random function is not present in ANSI SQL standard and should be specified in accordance with respective implementations.
+  - PostgreSQL: [`RANDOM`](https://www.postgresql.org/docs/current/functions-math.html#FUNCTIONS-MATH-RANDOM-TABLE)
+  - MySQL: [`RAND`](https://dev.mysql.com/doc/refman/8.0/en/mathematical-functions.html#function_rand)
 
 ## Ruby
 
