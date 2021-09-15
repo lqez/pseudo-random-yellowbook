@@ -28,7 +28,7 @@ List ordering follows [TIOBE Index](https://www.tiobe.com/tiobe-index/).
 | Julia | [`Random`](https://docs.julialang.org/en/v1/stdlib/Random) | [`abs(rand(UInt64)) % 10 + 1`](https://docs.julialang.org/en/v1/stdlib/Random/#Base.rand) | [`abs(rand(Float64)) * 100`](https://docs.julialang.org/en/v1/stdlib/Random/#Base.rand)
 | Scala | [`scala.util.Random`](https://www.scala-lang.org/api/3.0.2/scala/util/Random.html) | [`Random.nextInt(10) + 1`](https://www.scala-lang.org/api/3.0.2/scala/util/Random.html#nextInt-fffffbe0) | [`Random.between(1f, 100f)`](https://www.scala-lang.org/api/3.0.2/scala/util/Random.html#between-44b) |
 | Clojure | [`clojure.core/rand`](https://clojuredocs.org/clojure.core/rand) [`clojure.core/rand-int`](https://clojuredocs.org/clojure.core/rand-int) | [`(+ (rand 10) 1)`](https://clojuredocs.org/clojure.core/rand-int#example-542692cac026201cdc326b17) | [`(rand 100)`](https://clojuredocs.org/clojure.core/rand#example-542692c8c026201cdc326a11) |
-| Bash | [$RANDOM](https://tldp.org/LDP/abs/html/randomvar.html) | `$(( $RANDOM % 10 + 1 ))` | `$(( $RANDOM / 32767.0 * 100 ))` |
+| [Bash](#bash) | [`$RANDOM`](https://tldp.org/LDP/abs/html/randomvar.html) | `$(( $RANDOM % 10 + 1 ))` | `$(( $RANDOM / 32768.0 * 100 ))` |
 
 ## SQL
 
@@ -45,3 +45,7 @@ Random function is not present in ANSI SQL standard and should be specified in a
         CALL RANDOM_NUMBER(r)
     END PROGRAM
   ```
+
+## Bash
+
+[`$RANDOM`](https://tldp.org/LDP/abs/html/randomvar.html) returns an integer in the range 0 ~ 32767. To get a floating number in range of `[0..1)`, divide it by `32768`.
