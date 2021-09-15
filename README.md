@@ -19,12 +19,13 @@ List ordering follows [TIOBE Index](https://www.tiobe.com/tiobe-index/).
 | [Ruby](#ruby) | [Random](https://ruby-doc.org/core-3.0.2/Random.html) | [`rand(10) + 1`](https://ruby-doc.org/core-3.0.2/Random.html#method-i-rand) | [`rand * 100`](https://ruby-doc.org/core-3.0.2/Random.html#method-i-rand) |
 | [Go](#Go) | [`math/rand`](https://pkg.go.dev/math/rand) | [`rand.Intn(10) + 1`](https://pkg.go.dev/math/rand#Intn) | [`rand.Float64() * 100`](https://pkg.go.dev/math/rand#Float64) |
 | Swift |
-| MATLAB |
-| Fortran |
+| [MATLAB](#matlab) | [intrinsic](https://www.mathworks.com/help/matlab/random-number-generation.html) | [`randi(10)`](https://www.mathworks.com/help/matlab/ref/randi.html) | [`rand * 100.0`](https://www.mathworks.com/help/matlab/ref/rand.html) |
+| [Fortran](#fortran) | intrinsic | [`CALL RANDOM_NUMBER(r); i = ceiling(r*10)`](https://gcc.gnu.org/onlinedocs/gfortran/RANDOM_005fNUMBER.html#RANDOM_005fNUMBER) | [`CALL RANDOM_NUMBER(r); r = r*100`](https://gcc.gnu.org/onlinedocs/gfortran/RANDOM_005fNUMBER.html#RANDOM_005fNUMBER) |
 | R |
 | Perl |
 | Delphi |
 | Rust |
+| [Julia](#julia) | [`Random`](https://docs.julialang.org/en/v1/stdlib/Random) | [`abs(rand(UInt64)) % 10 + 1`](https://docs.julialang.org/en/v1/stdlib/Random/#Base.rand) | [`abs(rand(Float64)) * 100`](https://docs.julialang.org/en/v1/stdlib/Random/#Base.rand)
 | [Scala](#scala) | [`scala.util.Random`](https://www.scala-lang.org/api/3.0.2/scala/util/Random.html) | [`Random.nextInt(10) + 1`](https://www.scala-lang.org/api/3.0.2/scala/util/Random.html#nextInt-fffffbe0) | [`Random.between(1f, 100f)`](https://www.scala-lang.org/api/3.0.2/scala/util/Random.html#between-44b) |
 
 
@@ -48,6 +49,20 @@ List ordering follows [TIOBE Index](https://www.tiobe.com/tiobe-index/).
 
 ## Ruby
 
-## Scala
-
 ## Go
+
+## MATLAB
+
+## Fortran
+* `i` is `INTEGER` and `r` is `REAL`.
+* Declare output variable first and pass it to `RANDOM_NUMBER`.
+  ```fortran
+    PROGRAM test_random_number
+        REAL :: r
+        CALL RANDOM_NUMBER(r)
+    END PROGRAM
+  ```
+
+## Julia
+
+## Scala
