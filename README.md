@@ -18,10 +18,10 @@ List ordering follows [TIOBE Index](https://www.tiobe.com/tiobe-index/).
 | [SQL](#sql) | - | `TRUNC(RANDOM() * 10) + 1` | `RANDOM() * 100` |
 | Ruby | [Random](https://ruby-doc.org/core-3.0.2/Random.html) | [`rand(10) + 1`](https://ruby-doc.org/core-3.0.2/Random.html#method-i-rand) | [`rand * 100`](https://ruby-doc.org/core-3.0.2/Random.html#method-i-rand) |
 | Go | [`math/rand`](https://pkg.go.dev/math/rand) | [`rand.Intn(10) + 1`](https://pkg.go.dev/math/rand#Intn) | [`rand.Float64() * 100`](https://pkg.go.dev/math/rand#Float64) |
-| Swift | [Swift Standard Library](https://developer.apple.com/documentation/swift/swift_standard_library) | [`Int.random(in: 1...10)`](https://developer.apple.com/documentation/swift/int/2995648-random) | [`Float.random(in: 0..<100)`](https://developer.apple.com/documentation/swift/float/2995568-random) 
+| Swift | [Swift Standard Library](https://developer.apple.com/documentation/swift/swift_standard_library) | [`Int.random(in: 1...10)`](https://developer.apple.com/documentation/swift/int/2995648-random) | [`Float.random(in: 0..<100)`](https://developer.apple.com/documentation/swift/float/2995568-random)
 | MATLAB | [intrinsic](https://www.mathworks.com/help/matlab/random-number-generation.html) | [`randi(10)`](https://www.mathworks.com/help/matlab/ref/randi.html) | [`rand * 100.0`](https://www.mathworks.com/help/matlab/ref/rand.html) |
 | [Fortran](#fortran) | intrinsic | [`CALL RANDOM_NUMBER(r); i = ceiling(r*10)`](https://gcc.gnu.org/onlinedocs/gfortran/RANDOM_005fNUMBER.html#RANDOM_005fNUMBER) | [`CALL RANDOM_NUMBER(r); r = r*100`](https://gcc.gnu.org/onlinedocs/gfortran/RANDOM_005fNUMBER.html#RANDOM_005fNUMBER) |
-| R |
+| R | [base](https://stat.ethz.ch/R-manual/R-devel/library/base/DESCRIPTION), [stats](https://stat.ethz.ch/R-manual/R-devel/library/stats/DESCRIPTION) | [`sample(1:10, 1)`](https://stat.ethz.ch/R-manual/R-devel/library/base/html/sample.html) | [`runif(1, 0, 100)`](https://stat.ethz.ch/R-manual/R-devel/library/stats/html/Uniform.html)
 | Perl |
 | Delphi |
 | Rust |
