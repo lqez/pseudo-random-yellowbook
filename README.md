@@ -10,13 +10,13 @@ List ordering follows [TIOBE Index](https://www.tiobe.com/tiobe-index/).
 | [Python](#python) | [`random`](https://docs.python.org/3/library/random.html) | [`random.randint(1, 10)`](https://docs.python.org/3/library/random.html#random.randint) | [`random.random() * 100`](https://docs.python.org/3/library/random.html#random.random) |
 | [Java](#java) | [`java.util.Random`](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Random.html) | [`new Random().nextInt(10) + 1`](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Random.html#nextInt()) | [`new Random().nextFloat() * 100`](https://docs.oracle.com/en/java/javase/16/docs/api/java.base/java/util/Random.html#nextFloat()) |
 | [C++](#C++) | `<random>` | (mt19937...) | |
-| C# |
+| C# | [`System`](https://docs.microsoft.com/en-us/dotnet/api/system.random?view=net-5.0)| [`new Random().Next(1, 10)`](https://docs.microsoft.com/en-us/dotnet/api/system.random?view=net-5.0) | [`(float)(new Random().NextDouble() * 100)`] |
 | Visual Basic |
 | [JavaScript](#javascript) | [`Math`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math) | [`Math.floor(Math.random() * 10) + 1`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/random) | `Math.random() * 100` |
 | Assembly |
 | [PHP](#php) | [Math](https://www.php.net/manual/en/book.math.php) (core) | [`mt_rand(1, 10)`](https://www.php.net/manual/function.rand.php) | [`mt_rand() / (float)(mt_getrandmax() + 1) * 100`](https://www.php.net/manual/en/function.mt-getrandmax.php) |
 | SQL |
-| Ruby |
+| [Ruby](#ruby) | [Random](https://ruby-doc.org/core-3.0.2/Random.html) | [`rand(10) + 1`](https://ruby-doc.org/core-3.0.2/Random.html#method-i-rand) | [`rand * 100`](https://ruby-doc.org/core-3.0.2/Random.html#method-i-rand) |
 | [Go](#Go) | [`math/rand`](https://pkg.go.dev/math/rand) | [`rand.Intn(10) + 1`](https://pkg.go.dev/math/rand#Intn) | [`rand.Float64() * 100`](https://pkg.go.dev/math/rand#Float64) |
 | Swift |
 | MATLAB |
@@ -45,6 +45,8 @@ List ordering follows [TIOBE Index](https://www.tiobe.com/tiobe-index/).
 ## JavaScript
 
 ## PHP
+
+## Ruby
 
 ## Scala
 
