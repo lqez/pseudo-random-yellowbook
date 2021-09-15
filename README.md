@@ -15,7 +15,7 @@ List ordering follows [TIOBE Index](https://www.tiobe.com/tiobe-index/).
 | JavaScript | [`Math`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math) | [`Math.floor(Math.random() * 10) + 1`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/random) | `Math.random() * 100` |
 | Assembly |
 | PHP | [Math](https://www.php.net/manual/en/book.math.php) (core) | [`mt_rand(1, 10)`](https://www.php.net/manual/function.rand.php) | [`mt_rand() / (float)(mt_getrandmax() + 1) * 100`](https://www.php.net/manual/en/function.mt-getrandmax.php) |
-| [SQL](#sql) | - | `SELECT TRUNC(RANDOM() * 10) + 1` | `SELECT RANDOM() * 100` |
+| [SQL](#sql) | - | `TRUNC(RANDOM() * 10) + 1` | `RANDOM() * 100` |
 | Ruby | [Random](https://ruby-doc.org/core-3.0.2/Random.html) | [`rand(10) + 1`](https://ruby-doc.org/core-3.0.2/Random.html#method-i-rand) | [`rand * 100`](https://ruby-doc.org/core-3.0.2/Random.html#method-i-rand) |
 | Go | [`math/rand`](https://pkg.go.dev/math/rand) | [`rand.Intn(10) + 1`](https://pkg.go.dev/math/rand#Intn) | [`rand.Float64() * 100`](https://pkg.go.dev/math/rand#Float64) |
 | Swift | [Swift Standard Library](https://developer.apple.com/documentation/swift/swift_standard_library) | [`Int.random(in: 1...10)`](https://developer.apple.com/documentation/swift/int/2995648-random) | [`Float.random(in: 0..<100)`](https://developer.apple.com/documentation/swift/float/2995568-random) 
