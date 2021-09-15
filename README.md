@@ -44,3 +44,10 @@ Random function is not present in ANSI SQL standard and should be specified in a
         CALL RANDOM_NUMBER(r)
     END PROGRAM
   ```
+
+## Bash
+* [$RANDOM](https://tldp.org/LDP/abs/html/randomvar.html)
+  ```bash
+  $ echo $(( $RANDOM % 10 + 1 ))       # 1 <= integer <= 10
+  $ echo $(( $RANDOM % 100 )).$RANDOM  # 0 <= float < 100
+  ```
