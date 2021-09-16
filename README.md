@@ -13,7 +13,7 @@ List ordering follows [TIOBE Index](https://www.tiobe.com/tiobe-index/).
 | C# | [`System`](https://docs.microsoft.com/dotnet/api/system.random)| [`new Random().Next(1, 11)`](https://docs.microsoft.com/en-us/dotnet/api/system.random.next) | [`new Random().NextDouble() * 100`](https://docs.microsoft.com/dotnet/api/system.random.nextdouble) |
 | Visual Basic | [`VBMath`](https://docs.microsoft.com/dotnet/api/microsoft.visualbasic.vbmath) | [`CInt(Int((Rnd() * 10) + 1))`](https://docs.microsoft.com/dotnet/api/microsoft.visualbasic.vbmath.rnd) | `Rnd() * 100` |
 | JavaScript | [`Math`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math) | [`Math.floor(Math.random() * 10) + 1`](https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Math/random) | `Math.random() * 100` |
-| Assembly |
+| Assembly (x86) | [RDRAND](https://en.wikipedia.org/wiki/RDRAND) | `xor eax, eax; xor edx, edx; rdrand eax; mov ecx, 10; div ecx; lea eax, [edx + 1];`|
 | PHP | [Math](https://www.php.net/manual/en/book.math.php) (core) | [`mt_rand(1, 10)`](https://www.php.net/manual/function.rand.php) | [`mt_rand() / (float)(mt_getrandmax() + 1) * 100`](https://www.php.net/manual/en/function.mt-getrandmax.php) |
 | [SQL](#sql) | - | `TRUNC(RANDOM() * 10) + 1` | `RANDOM() * 100` |
 | Ruby | [Random](https://ruby-doc.org/core-3.0.2/Random.html) | [`rand(10) + 1`](https://ruby-doc.org/core-3.0.2/Random.html#method-i-rand) | [`rand * 100`](https://ruby-doc.org/core-3.0.2/Random.html#method-i-rand) |
